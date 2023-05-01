@@ -3,7 +3,7 @@
 
 
 
-<p id="description">The goal of this project is to create a web scraper using Puppeteer to extract job listings from a popular job board website. Students will demonstrate their understanding of web scraping fundamentals, CSS selectors, and Puppeteer functions by building a functional scraper that outputs job data in a structured format<br>
+<p id="description">The goal of this project is to create a web scraper using Puppeteer to extract job listings from a popular job board website.it will be demonstrate their understanding of web scraping fundamentals, CSS selectors, and Puppeteer functions by building a functional scraper that outputs job data in a structured format<br>
 
 <h1>Step by step Guide for run this project</h1>
 
