@@ -40,8 +40,8 @@ All data saved in local "db.json" file,you can see all extracted data in this fi
 <Tech Stack/>
 
 <h1>Technologies: </h1>
-* JavaScript
-* Node
+1.JavaScript <br>
+2.Node
 
 
 Thank You
