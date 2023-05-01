@@ -9,11 +9,15 @@
 
 
 
-<p>1.Clone  this repo in you machine</p>
+<p>1.Clone  this repo in your machine</p>
 
   1: open your VS code terminal and type "Git clone " 
 
   and then paste this URL:"https://github.com/Suraj2320/job_scrapper_indeed.git"
+  
+  Repo copy will be created
+  
+  then please go into pertuclar folder through "CD"
 
 <p>2. Install NPM packages</p>
 
@@ -38,6 +42,9 @@ All data saved in local "db.json" file,you can see all extracted data in this fi
 Technologies:
 * JavaScript
 * Node
+
+
+Thank You
 
 
 
