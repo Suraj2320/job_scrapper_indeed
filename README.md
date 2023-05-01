@@ -11,7 +11,7 @@
 
 <p>1.Clone  this repo in your machine</p>
 
-  1: open your VS code terminal and type "git clone " 
+  ## 1: open your VS code terminal and type "git clone " 
 
   and then paste this URL:"https://github.com/Suraj2320/job_scrapper_indeed.git"
   
@@ -19,13 +19,13 @@
   
   then please go into pertuclar folder through "CD"
 
-<p>2. Install NPM packages</p>
+ ## <p>2. Install NPM packages</p>
 
 
 npm install 
 
 
-<p>3. For start the Job scrapping project </p>
+## <p>3. For start the Job scrapping project </p>
 
 npm start or nodemon index.js
 
@@ -41,8 +41,11 @@ All data saved in local "db.json" file,you can see all extracted data in this fi
 
 <h1>Technologies: </h1>
 1.JavaScript <br>
+<br>
 2.Node
 
+
+<br>
 
 Thank You
 
