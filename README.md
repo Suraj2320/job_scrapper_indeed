@@ -40,12 +40,12 @@
 <Tech Stack/>
 
 <h1>Technologies: </h1>
-1.JavaScript <br>
+## 1.JavaScript <br>
 <br>
-2.Node
+##2.Node
 
 
-<br>
+<br/>
 
 ## Thank You
 
