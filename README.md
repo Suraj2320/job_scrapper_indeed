@@ -11,7 +11,7 @@
 
 <p>1.Clone  this repo in your machine</p>
 
-  1: open your VS code terminal and type "Git clone " 
+  1: open your VS code terminal and type "git clone " 
 
   and then paste this URL:"https://github.com/Suraj2320/job_scrapper_indeed.git"
   
