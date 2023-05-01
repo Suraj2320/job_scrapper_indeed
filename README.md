@@ -37,7 +37,7 @@ All data saved in local "db.json" file,you can see all extracted data in this fi
 
 
 
-<Tech Stack
+<Tech Stack/>
 
 Technologies:
 * JavaScript
