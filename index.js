@@ -75,42 +75,74 @@ run("Full stack web developer");
 <html>
 <head>
   <title>Tag Input Field</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .tag {
+      display: inline-block;
+      padding: 5px;
+      background-color: #f0f0f0;
+      margin: 5px;
+      border-radius: 5px;
+    }
+    .tag span {
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <input type="text" id="tagInput" placeholder="Enter tags">
-  <ul id="tagList"></ul>
+  <div id="tag-container">
+    <input type="text" id="tag-input" placeholder="Enter tags..." />
+  </div>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(document).ready(function() {
-      var tags = [];
+      var tagsArray = []; // Array to store tags
 
-      $('#tagInput').on('keydown', function(event) {
-        if (event.keyCode === 13) { // Enter key
+      $('#tag-input').on('keydown', function(event) {
+        var tagInput = $(this);
+        var tagsContainer = $('#tag-container');
+
+        if (event.which === 13 || event.which === 32) {
+          // Prevent form submission
           event.preventDefault();
-          var tag = $(this).val().trim();
 
-          if (tag !== '') {
-            tags.push(tag);
-            $(this).val('');
-            updateTagList();
+          // Get the entered tag value
+          var tagValue = tagInput.val().trim();
+
+          if (tagValue !== '') {
+            // Create a new tag element
+            var tagElement = $('<div class="tag"><span>&times;</span>' + tagValue + '</div>');
+
+            // Append the tag element to the container
+            tagsContainer.append(tagElement);
+
+            // Clear the input field
+            tagInput.val('');
+
+            // Add the tag to the array
+            tagsArray.push(tagValue);
           }
         }
       });
 
-      function updateTagList() {
-        $('#tagList').empty();
-        for (var i = 0; i < tags.length; i++) {
-          $('#tagList').append('<li>' + tags[i] + '</li>');
+      $('#tag-container').on('click', '.tag span', function() {
+        var tagElement = $(this).parent();
+
+        // Remove the tag from the array
+        var tagValue = tagElement.text().trim();
+        var index = tagsArray.indexOf(tagValue);
+        if (index !== -1) {
+          tagsArray.splice(index, 1);
         }
-      }
+
+        // Remove the tag element from the container
+        tagElement.remove();
+      });
     });
   </script>
 </body>
 </html>
-
-
-
 
 
 
