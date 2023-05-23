@@ -71,11 +71,11 @@ run("Full stack web developer");
 
 
 
-<!DOCTYPE html>
+<!DOCDOCTYPETYPE html>
 <html>
 <head>
   <title>Tag Input Field</title>
-  <style>
+
     .tag {
       display: inline-block;
       background-color: #f2f2f2;
@@ -130,3 +130,36 @@ run("Full stack web developer");
   </script>
 </body>
 </html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tag Input Field</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <input type="text" id="tagInput" placeholder="Enter tags">
+  <button id="addTagButton">Add Tag</button>
+  <ul id="tagList"></ul>
+
+  <script>
+    $(document).ready(function() {
+      var tags = [];
+
+      $('#addTagButton').click(function() {
+        var tag = $('#tagInput').val().trim();
+
+        if (tag !== '') {
+          tags.push(tag);
+          $('#tagList').append('<li>' + tag + '</li>');
+          $('#tagInput').val('');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
